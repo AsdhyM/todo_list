@@ -35,16 +35,12 @@ while users_choice != "5":
     users_choice = create_menu()
     if (users_choice == "1"):
         add_todo(file_name)
-        print("You entered 1")
     elif (users_choice == "2"):
         remove_todo(file_name)
-        print("You entered 2")
     elif (users_choice == "3"):
         mark_todo(file_name)
-        print("You entered 3")
     elif (users_choice == "4"):
         view_todo(file_name)
-        print("You entered 4")
     elif (users_choice == "5"):
         continue
     else:
