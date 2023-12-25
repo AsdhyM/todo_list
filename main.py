@@ -1,3 +1,5 @@
+from colored import Fore, Back, Style
+
 from todo_functions import add_todo, remove_todo, mark_todo, view_todo
 
 file_name = "list.csv"
@@ -13,12 +15,12 @@ except FileNotFoundError:
     # Now, we know the file doesn't exist
     # Create the file
     todo_file = open(file_name, "w")
-    # We can also insert the fist line into the file
+    # We can also insert the first line into the file
     todo_file.write("title,completed\n")
     todo_file.close()
     print("In except block")
 
-print("Welcome to your TODO List")
+print(f"{Fore.black}{Back.white}Welcome to your TODO List")
 
 def create_menu():
     print("1. Enter 1 to add item to your list")
