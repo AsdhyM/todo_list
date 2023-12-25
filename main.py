@@ -1,4 +1,4 @@
-from colored import Fore, Back, Style
+from colored import Fore, Back, Style, attr
 
 from todo_functions import add_todo, remove_todo, mark_todo, view_todo
 
@@ -20,7 +20,7 @@ except FileNotFoundError:
     todo_file.close()
     print("In except block")
 
-print(f"{Fore.black}{Back.white}Welcome to your TODO List")
+print(f"{Fore.black}{Back.white}Welcome to your TODO List{Style.reset}")
 
 def create_menu():
     print("1. Enter 1 to add item to your list")
